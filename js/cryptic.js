@@ -184,9 +184,7 @@
 
                 words: [2,3,5,7]
             }
-
         ]
-
     }
 ];
 
@@ -794,22 +792,16 @@ function submitGuess() {
    NEXT PUZZLE
    =================================================== */
 
-function nextPuzzle() {
+   function nextPuzzle() {
 
-    if (
-        currentPuzzleIndex >=
-        puzzles.length - 1
-    ) {
+    if (currentPuzzleIndex >= puzzles.length - 1) {
+
+        window.location.href = "https://digibouquet.vercel.app/bouquet/587d14df-fadf-4908-8ddf-618593aa07f1";
 
         return;
-
     }
 
-
-    loadPuzzle(
-        currentPuzzleIndex + 1
-    );
-
+    loadPuzzle(currentPuzzleIndex + 1);
 }
 
 
